@@ -11,6 +11,14 @@ const providerDict = {
   'netflix': 'nfx'
 }
 
+/**
+ * Gets the full details for the content ID passed in.
+ * 
+ * @param {String} id
+ * @param {String} type - `show` or `movie`
+ * @param {String} locale
+ * @return {Object}
+ */
 const getTitleDetailed = (id, type, locale) => {
   const options = {
     format: 'json',

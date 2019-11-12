@@ -4,9 +4,9 @@ train (t-i8ppl0wqe5bgdedgunem99cpm) {
   last-modified (1573508601180)
 }
 train (t-iojolx5j0dfjis4mu8ujggoaw) {
-  utterance ("[g:recommend] another from (netflix)[v:ContentProvider:netflix]")
+  utterance ("[g:recommend:continue] another from (netflix)[v:ContentProvider:netflix]")
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
-  last-modified (1573508842959)
+  last-modified (1573558067023)
 }
 train (t-iqyvhdn8f8l0gjhhwzzhnpfbv) {
   utterance ("[g:chearmstrong.streamPicker.recommend] what can i watch on (netflix)[v:chearmstrong.streamPicker.ContentProvider:netflix]")
@@ -14,7 +14,7 @@ train (t-iqyvhdn8f8l0gjhhwzzhnpfbv) {
   last-modified (1573508553282)
 }
 train (t-itvj55vn65s2xnn16r73vw2vi) {
-  utterance ("[g:recommend] recommendation from (amazon prime video)[v:ContentProvider:'amazon prime video']")
+  utterance ("[g:recommend:continue] recommendation from (amazon prime video)[v:ContentProvider:'amazon prime video']")
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
-  last-modified (1573508806500)
+  last-modified (1573558031210)
 }

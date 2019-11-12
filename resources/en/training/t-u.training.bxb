@@ -4,7 +4,12 @@ train (t-uh482nh2q5m8expzadhwikkm3) {
   last-modified (1573508457559)
 }
 train (t-ulhvzk51lj1i643cui9l9nb5m) {
-  utterance ("[g:recommend] recommendation from (apple tv plus)[v:ContentProvider:'apple tv plus']")
+  utterance ("[g:recommend:continue] recommendation from (apple tv plus)[v:ContentProvider:'apple tv plus']")
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
-  last-modified (1573508811390)
+  last-modified (1573558038148)
+}
+train (t-us8g86zsebfb2oxe32ze3rw5k) {
+  utterance ("[g:recommend] pick something on (amazon prime video)[v:ContentProvider:'amazon prime video']")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
+  last-modified (1573557985932)
 }

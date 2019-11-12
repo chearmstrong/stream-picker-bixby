@@ -1,8 +1,3 @@
-train (t-k4nnyj96d4k75liygkn6rs7ju) {
-  utterance ("[g:recommend] pick someting on (apple tv plus)[v:ContentProvider:'apple tv plus']")
-  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
-  last-modified (1573551896019)
-}
 train (t-kuvxbhofpicfk410xvutm2av2) {
   utterance ("[g:recommend] suggest something on (apple tv plus)[v:ContentProvider:'apple tv plus']")
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)

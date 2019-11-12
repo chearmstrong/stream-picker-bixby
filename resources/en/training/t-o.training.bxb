@@ -1,12 +1,7 @@
-train (t-oj2opgm6rhh4roxr4atc9oc1u) {
-  utterance ("[g:recommend] pick someting on (amazon prime video)[v:ContentProvider:'amazon prime video']")
-  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
-  last-modified (1573551930565)
-}
 train (t-oxyhxybrvgnysefi51vbvzsjf) {
-  utterance ("[g:recommend] recommendation from (netflix)[v:ContentProvider:netflix]")
+  utterance ("[g:recommend:continue] recommendation from (netflix)[v:ContentProvider:netflix]")
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
-  last-modified (1573508824415)
+  last-modified (1573558047611)
 }
 train (t-oyz6r1gmxmarp6k5oio9z3dg8) {
   utterance ("[g:recommend:prompt] (netflix)[v:ContentProvider:netflix]")

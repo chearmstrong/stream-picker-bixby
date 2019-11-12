@@ -1,5 +1,5 @@
 train (t-wq5dgnutdrlx6lqx4lhn1jel0) {
-  utterance ("[g:recommend] another from (amazon prime video)[v:ContentProvider:'amazon prime video']")
+  utterance ("[g:recommend:continue] another from (amazon prime video)[v:ContentProvider:'amazon prime video']")
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
-  last-modified (1573508837245)
+  last-modified (1573558059499)
 }
