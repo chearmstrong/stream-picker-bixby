@@ -1,0 +1,72 @@
+layout-macro-def (content-details) {
+	params {
+		param (content) {
+			type (Content)
+			min (Required) max (One)
+		}
+  }
+	content {
+		section {
+			content {
+				if (exists(content.poster) && exists(content.trailerStream)) {
+					video {
+						url ("#{value(content.trailerStream)}")
+						poster ("#{value(content.poster)}")
+					}
+				} else-if (exists(content.poster)) {
+					image {
+						aspect-ratio(1:1)
+						url ("#{value(content.poster)}")
+						object-fit (Contain)
+						lightbox-enabled (false)
+					}
+				}
+				title-area {
+					halign (Center)
+					slot1 {
+						text {
+							value ("#{value(content.title)}")
+							style (Title_M)
+						}
+					}
+					slot2 {
+						paragraph {
+							value("#{value(content.year)} #{value(content.type)}")
+							style(Detail_L_Soft)
+						}
+					}
+				}
+				if (exists(content.rating) && exists(content.stars)) {
+					title-area {
+						halign (Center)
+						slot2 {
+							paragraph {
+								value ("#{value(content.stars)}")
+								style (Detail_L)
+							}
+						}
+						slot3 {
+							paragraph {
+								value ("#{value(content.rating)} out of 10")
+								style (Detail_L)
+							}
+						}
+					}
+				}
+				divider
+				paragraph {
+					value ("#{value(content.overview)}")
+					style (Detail_M)
+				}
+				if (exists(content.play)) {
+					attribution-link {
+						label {
+							template ("Stream at #{upper(content.provider)}")
+						}
+						url ("#{value(content.play)}")
+					}
+				}
+			}
+		}
+	}
+}

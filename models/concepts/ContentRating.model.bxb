@@ -1,0 +1,3 @@
+integer (ContentRating) {
+  description (The rating of a content)
+}

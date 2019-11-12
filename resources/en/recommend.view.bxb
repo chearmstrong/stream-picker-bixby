@@ -1,0 +1,51 @@
+result-view {
+  match: Content (result) {
+    from-output: recommend(recommend) {
+      from-input: ContentProvider(provider)
+    }
+  }
+  render {
+    if (size(result) == 1) {
+      layout {
+        layout-macro (content-details) {
+          param (content) {
+            expression(result)
+          }
+        }
+      }
+    }
+  }
+  conversation-drivers {
+    if ("provider == 'netflix'") {
+      conversation-driver {
+        template ("Another from Netflix")
+      }
+      conversation-driver {
+        template ("Recommendation from Amazon Prime Video")
+      }
+      conversation-driver {
+        template ("Recommendation from Apple TV Plus")
+      }
+    } else-if ("provider == 'amazon prime video'") {
+      conversation-driver {
+        template ("Another from Amazon Prime Video")
+      }
+      conversation-driver {
+        template ("Recommendation from Netflix")
+      }
+      conversation-driver {
+        template ("Recommendation from Apple TV Plus")
+      }
+    } else-if ("provider == 'apple tv plus'") {
+      conversation-driver {
+        template ("Another from Apple TV Plus")
+      }
+      conversation-driver {
+        template ("Recommendation from Amazon Prime Video")
+      }
+      conversation-driver {
+        template ("Recommendation from Netflix")
+      }
+    }
+  }
+}

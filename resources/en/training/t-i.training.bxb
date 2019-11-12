@@ -1,0 +1,20 @@
+train (t-i8ppl0wqe5bgdedgunem99cpm) {
+  utterance ("[g:recommend] what can i watch on (apple tv plus)[v:ContentProvider:'apple tv plus']")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
+  last-modified (1573508601180)
+}
+train (t-iojolx5j0dfjis4mu8ujggoaw) {
+  utterance ("[g:recommend] another from (netflix)[v:ContentProvider:netflix]")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
+  last-modified (1573508842959)
+}
+train (t-iqyvhdn8f8l0gjhhwzzhnpfbv) {
+  utterance ("[g:chearmstrong.streamPicker.recommend] what can i watch on (netflix)[v:chearmstrong.streamPicker.ContentProvider:netflix]")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
+  last-modified (1573508553282)
+}
+train (t-itvj55vn65s2xnn16r73vw2vi) {
+  utterance ("[g:recommend] recommendation from (amazon prime video)[v:ContentProvider:'amazon prime video']")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
+  last-modified (1573508806500)
+}

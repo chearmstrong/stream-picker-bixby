@@ -1,0 +1,30 @@
+capsule {
+  id (chearmstrong.streamPicker)
+  version (1.0.0)
+  format (3)
+  targets {
+    target (bixby-mobile-en)
+  }
+  store-sections {
+    section (MoviesAndTV)
+  }
+  capsule-imports {
+    import (viv.image) {
+      as (content_poster) version (2.12.10)
+    }
+    import (viv.time) {
+      as (content_release) version (3.0.3)
+    }
+  }
+  runtime-flags {
+    use-input-views-for-selection-list-detail
+    modern-default-view-behavior
+    no-filtering-with-validation
+    concepts-inherit-super-type-features
+    modern-prompt-rejection
+    support-halt-effect-in-computed-inputs
+  }
+  permissions {
+    bixby-user-id-access
+  }
+}

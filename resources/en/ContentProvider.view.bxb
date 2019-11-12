@@ -1,0 +1,15 @@
+input-view {
+  match: ContentProvider (this)
+  message (Select your content provider?)
+  render {
+    selection-of (this) {
+      where-each (one) {
+        layout-macro (content-provider) {
+          param (provider) {
+            expression (one)
+          }
+        }
+      }
+    }
+  }
+}

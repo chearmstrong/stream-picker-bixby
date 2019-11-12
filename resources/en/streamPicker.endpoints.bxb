@@ -1,0 +1,8 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (recommend) {
+      accepted-inputs (provider, $vivContext)
+      local-endpoint (recommend.js)
+    }
+  }
+}

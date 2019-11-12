@@ -1,0 +1,47 @@
+structure (Content) {
+  description (A Content)
+  property (title) {
+    type (ContentTitle)
+    min (Required) max (One)
+  }
+  property (year) {
+    type (content_release.Year)
+    min (Required) max (One)
+  }
+  property (overview) {
+    type (ContentOverview)
+    min (Required) max (One)
+  }
+  property (provider) {
+    type (ContentProvider)
+    min (Required) max (One)
+  }
+  property (play) {
+    type (ContentProviderLink)
+    min (Optional) max (One)
+  }
+  property (trailer) {
+    type (ContentTrailer)
+    min (Optional) max (One)
+  }
+  property (trailerStream) {
+    type (ContentTrailerStream)
+    min (Optional) max (One)
+  }
+  property (rating) {
+    type (ContentRating)
+    min (Optional) max (One)
+  }
+  property (stars) {
+    type (ContentStars)
+    min (Optional) max (One)
+  }
+  property (poster) {
+    type (content_poster.Url)
+    min (Optional) max (One)
+  }
+  property (type) {
+    type (ContentType)
+    min (Required) max (One)
+  }
+}

@@ -1,0 +1,15 @@
+train (t-jii3uaj4l1dze0wgi9pfzlwqc) {
+  utterance ("[g:chearmstrong.streamPicker.recommend] pick something on (netflix)[v:chearmstrong.streamPicker.ContentProvider:netflix]")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
+  last-modified (1573551896917)
+}
+train (t-jxj8v4k5gttunnfqsg6evh00k) {
+  utterance ("[g:recommend] what can i watch on (amazon prime video)[v:ContentProvider:'amazon prime video']")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
+  last-modified (1573508575858)
+}
+train (t-jywgc5a08x37dsldd3iwk1rxh) {
+  utterance ("[g:recommend] suggest something to watch on (apple tv plus)[v:ContentProvider:'apple tv plus']")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
+  last-modified (1573504379197)
+}

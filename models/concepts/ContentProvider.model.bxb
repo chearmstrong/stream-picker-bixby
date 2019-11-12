@@ -1,0 +1,9 @@
+enum (ContentProvider) {
+  features {
+    transient
+  }
+  description (The streaming provider the content is avaialable on)
+  symbol (apple tv plus)
+  symbol (netflix)
+  symbol (amazon prime video)
+}

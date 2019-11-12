@@ -1,0 +1,10 @@
+train (t-55fxy9obd3fhh1mldhl9snsws) {
+  utterance ("[g:recommend:prompt] (amazon prime video)[v:ContentProvider:'amazon prime video']")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
+  last-modified (1573508789100)
+}
+train (t-5bi0111es21htae9u1su09e2c) {
+  utterance ("[g:recommend] another from (apple tv plus)[v:ContentProvider:'apple tv plus']")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
+  last-modified (1573508832208)
+}

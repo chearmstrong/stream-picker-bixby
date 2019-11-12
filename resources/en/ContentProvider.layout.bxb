@@ -1,0 +1,24 @@
+layout-macro-def (content-provider) {
+	params {
+		param (provider) {
+			type (ContentProvider)
+			min (Required) max (One)
+		}
+	}
+	content {
+		image-card {
+			image-object-fit (Contain)
+			title-area {
+				halign (Center)
+				slot1 {
+					text {
+						value ("#{upper(provider)}")
+						style(Detail_L_Soft)
+					}
+				}
+			}
+			// This would need updated if I extend the supported providers
+			image-url ("images/#{provider == 'apple tv plus' ? 'atp' : provider == 'amazon prime video' ? 'amp' : 'nfx'}.png")
+		}
+	}
+}
