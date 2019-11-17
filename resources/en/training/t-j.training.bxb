@@ -1,3 +1,13 @@
+train (t-jb4q2xaofqrklwh6oxgniqef3) {
+  utterance ("[g:getPopular] what's popular on (amazon prime video)[v:ContentProvider:'amazon prime video']")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIgYmBEYgZgCQjAwhA+QA=)
+  last-modified (1573825395070)
+}
+train (t-jc11hptzj080z2esqxt8ps8lm) {
+  utterance ("[g:getPopular] what's popular on (apple tv plus)[v:ContentProvider:'apple tv plus']")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIgYmBEYgZgCQjAwhA+QA=)
+  last-modified (1573825423627)
+}
 train (t-jii3uaj4l1dze0wgi9pfzlwqc) {
   utterance ("[g:recommend] pick something on (netflix)[v:ContentProvider:netflix]")
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)

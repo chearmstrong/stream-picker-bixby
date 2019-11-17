@@ -1,22 +1,16 @@
 hints {
   uncategorized {
-    hint ("Ask Stream Picker to recommend something on Netflix")
-    hint ("Ask Stream Picker to recommend something on Apple TV Plus")
-    hint ("Ask Stream Picker to recommend something on Amazon Prime Video")
-    hint ("Ask Stream Picker to suggest something on Netflix")
-    hint ("Ask Stream Picker to suggest something on Apple TV Plus")
-    hint ("Ask Stream Picker to suggest something on Amazon Prime Video")
+    hint ("Ask Stream Picker what's popular on Netflix")
+    hint ("Ask Stream Picker what's popular on Apple TV Plus")
+    hint ("Ask Stream Picker what's popular on Amazon Prime Video")
+    hint ("Ask Stream Picker to give me some suggestions from Netflix")
+    hint ("Ask Stream Picker to give me some suggestions from Apple TV Plus")
+    hint ("Ask Stream Picker to give me some suggestions from Amazon Prime Video")
     hint ("Ask Stream Picker to recommend something to watch on Netflix")
     hint ("Ask Stream Picker to recommend something to watch on Apple TV Plus")
     hint ("Ask Stream Picker to recommend something to watch on Amazon Prime Video")
     hint ("Ask Stream Picker to suggest something to watch on Netflix")
     hint ("Ask Stream Picker to suggest something to watch on Apple TV Plus")
     hint ("Ask Stream Picker to suggest something to watch on Amazon Prime Video")
-    hint ("Ask Stream Picker what can I watch on Netflix")
-    hint ("Ask Stream Picker what can I watch on Apple TV Plus")
-    hint ("Ask Stream Picker what can I watch on Amazon Prime Video")
-    hint ("Ask Stream Picker to pick something on Netflix")
-    hint ("Ask Stream Picker to pick something on Apple TV Plus")
-    hint ("Ask Stream Picker to pick something on Amazon Prime Video")
   }
 }

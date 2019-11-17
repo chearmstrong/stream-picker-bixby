@@ -1,0 +1,10 @@
+train (t-49ukutv5uonu9zxoc15yx3h5l) {
+  utterance ("[g:getPopular:continue] Popular titles from (apple tv plus)[v:ContentProvider:'apple tv plus']")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIgYmBEYgZgCQjAwhA+QA=)
+  last-modified (1573831040187)
+}
+train (t-4rcw4o3tcpsyfcbo167apohx4) {
+  utterance ("[g:getPopular] what's popular on (netflix)[v:ContentProvider:netflix]")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIgYmBEYgZgCQjAwhA+QA=)
+  last-modified (1573808411846)
+}

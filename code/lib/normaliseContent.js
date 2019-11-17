@@ -1,5 +1,8 @@
 const { log } = require('console')
 
+const backdropProfile = 's640'
+const posterProfile = 's332'
+const imageBaseUrl = 'https://images.justwatch.com'
 const providerDict = {
   'apple tv plus': 350,
   'amazon prime video': 9,
@@ -25,12 +28,17 @@ const getRating = scores => {
 /**
  * Gets the streaming link for the chosen provider.
  * 
- * @param {Array} offers
+ * @param {Object} content
+ * @param {Array} content.offers
  * @param {String} provider
  * @return {String|null}
  */
-const getStreamingLink = (offers, provider) => {
-  const filtered = offers.filter(item => {
+const getStreamingLink = (content, provider) => {
+  if (!content.offers || !content.offers.length) {
+    return null
+  }
+
+  const filtered = content.offers.filter(item => {
     return item.monetization_type === 'flatrate'
       && item.provider_id === providerDict[provider]
       && (item.urls && item.urls.standard_web)
@@ -43,6 +51,22 @@ const getStreamingLink = (offers, provider) => {
   return filtered[0].urls.standard_web
 }
 
+const getJustWatchPoster = content => {
+  if (!content.poster) {
+    return null
+  }
+
+  return imageBaseUrl + content.poster.replace("{profile}", posterProfile)
+}
+
+const getJustWatchBackdrop = content => {
+  if (!content.backdrops || !content.backdrops.length) {
+    return null
+  }
+
+  return imageBaseUrl + content.backdrops[0].backdrop_url.replace("{profile}", backdropProfile)
+}
+
 /**
  * Normalises the content returned from the API.
  * 
@@ -52,7 +76,7 @@ const getStreamingLink = (offers, provider) => {
  * @param {String} trailerStream - URL of the trailer stream
  * @return {Object}
  */
-const normaliseContent = (content, poster, provider, trailerStream) => {
+const normaliseContent = (content, poster, provider, trailerStream, youTubeId) => {
   const normalised = {
     title: content.title,
     rating: getRating(content.scoring) || null,
@@ -60,19 +84,24 @@ const normaliseContent = (content, poster, provider, trailerStream) => {
     year: content.original_release_year,
     overview: content.short_description,
     type: content.object_type,
-    provider: provider
+    provider: provider,
+    backdrop: getJustWatchBackdrop(content),
+    poster: getJustWatchPoster(content),
+    play: getStreamingLink(content, provider)
   }
+
+  // CONDITIONAL ITEMS
 
   if (poster) {
-    normalised.poster = poster
-  }
-
-  if (true) {
-    normalised.play = getStreamingLink(content.offers, provider)
+    normalised.poster = poster || getJustWatchPoster(content)
   }
 
   if (trailerStream) {
     normalised.trailerStream = trailerStream
+  }
+
+  if (youTubeId) {
+    normalised.youTubeId = youTubeId
   }
 
   return normalised

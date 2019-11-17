@@ -1,17 +1,16 @@
 dialog (Result) {
-  match: recommend (this) {
-    min (Required) max (One)
-    from-input: ContentProvider (provider)
+	match: Content (content) {
+    from-output: recommend(action)
   }
-  choose (Random) {
-    template ("The #{value(type)}, #{value(title)}, is popular on #{upper(provider)} right now. Why not give it a try?! 📺") {
-      speech ("The #{value(type)}, #{value(title)}, is popular on #{upper(provider)} right now. Why not give it a try?!")
-    }
-    template ("#{value(title)} is a great #{value(type)}, and is streaming on #{upper(provider)} now. Check it out and see what you think! 📺") {
-      speech ("#{value(title)} is a great #{value(type)}, and is streaming on #{upper(provider)} now. Check it out and see what you think!")
-    }
-    template ("Head over to #{upper(provider)} and watch #{value(title)}. This #{value(type)} has been popular with users... I hope you enjoy it! 📺") {
-      speech ("Head over to #{upper(provider)} and watch #{value(title)}. This #{value(type)} has been popular with users... I hope you enjoy it!")
-    }
-  }
+	choose (Random) {
+		template ("The #{value(type)}, #{value(title)}, is popular on #{upper(provider)} right now. Why not give it a try?! 📺") {
+			speech ("The #{value(type)}, #{value(title)}, is popular on #{upper(provider)} right now. Why not give it a try?!")
+		}
+		template ("#{value(title)} is a great #{value(type)}, and is streaming on #{upper(provider)} now. Check it out and see what you think! 📺") {
+			speech ("#{value(title)} is a great #{value(type)}, and is streaming on #{upper(provider)} now. Check it out and see what you think!")
+		}
+		template ("Head over to #{upper(provider)} and watch #{value(title)}. This #{value(type)} has been popular with users... I hope you enjoy it! 📺") {
+			speech ("Head over to #{upper(provider)} and watch #{value(title)}. This #{value(type)} has been popular with users... I hope you enjoy it!")
+		}
+	}
 }
