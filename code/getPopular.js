@@ -5,8 +5,6 @@ const { getManyMovieTrailerStreams } = require('./api/mc.js')
 const getYouTubeId = require('./lib/getYouTubeId.js')
 const getTmdbId = require('./lib/getTmdbId.js')
 
-const { log } = require('console')
-
 module.exports.function = function getPopular(provider, $vivContext) {
   try {
     const { locale } = $vivContext
