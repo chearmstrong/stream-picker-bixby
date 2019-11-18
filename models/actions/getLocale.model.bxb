@@ -1,0 +1,11 @@
+action (getLocale) {
+  type (Fetch)
+  description (Get the user's locale)
+  collect {
+    input (_) {
+      type (viv.core.Text)
+      min (Optional) max (One)
+    }
+  }
+  output (ContentLocale)
+}
