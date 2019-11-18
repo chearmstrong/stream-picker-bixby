@@ -1,5 +1,5 @@
-const { getRandomTitleByProvider } = require('./api/justWatch.js')
 // const getMoviePoster = require('./api/tmdb.js')
+const { getRandomTitleByProvider } = require('./api/justWatch.js')
 const normaliseContent = require('./lib/normaliseContent.js')
 const errorNotify = require('./lib/errorNotify.js')
 const { getMovieTrailerStream } = require('./api/mc.js')
@@ -17,8 +17,8 @@ module.exports.function = function recommend(provider, $vivContext) {
 
     const tmdbId = getTmdbId(content.external_ids || [])
     const youTubeId = getYouTubeId(content.clips || [])
-    // const poster = tmdbId ? getMoviePoster(tmdbId, content.object_type) : null
     const trailerStream = youTubeId ? getMovieTrailerStream(youTubeId) : null
+    // const poster = tmdbId ? getMoviePoster(tmdbId, content.object_type) : null
 
     return normaliseContent(content, null, provider, trailerStream, youTubeId)
   } catch (error) {

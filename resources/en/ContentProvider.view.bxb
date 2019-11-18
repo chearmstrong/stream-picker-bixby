@@ -1,6 +1,10 @@
 input-view {
   match: ContentProvider (this)
-  message (Select your content provider?)
+  message {
+    template (Choose your streaming content provider. Please note, some providers may not provide content in your locale. 👇) {
+      speech (Choose your streaming content provider.)
+    }
+  }
   render {
     selection-of (this) {
       where-each (one) {

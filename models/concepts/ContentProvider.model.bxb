@@ -6,4 +6,8 @@ enum (ContentProvider) {
   symbol (apple tv plus)
   symbol (netflix)
   symbol (amazon prime video)
+  symbol (hulu)
+  symbol (hbo now)
+  symbol (disney plus)
+  symbol (disney life)
 }

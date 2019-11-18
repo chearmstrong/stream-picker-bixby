@@ -1,0 +1,41 @@
+layout-macro-def (content-more) {
+	params {
+		param (content) {
+			type (Content)
+			min (Required) max (One)
+		}
+  }
+	content {
+		section {
+			content {
+        divider
+        cell-card {
+          slot1 {
+            image {
+              url ("images/#{value(content.providerShort)}.jpg")
+              background-color (Transparent)
+							shape (Square)
+            }
+          }
+          slot2{
+            content {
+              order (PrimarySecondary)
+              primary{
+                template ("See what's popular...")
+              }
+              secondary{
+                template ("#{upper(content.provider)}")
+              }
+            }
+          }
+          on-click {
+            intent {
+              goal: getPopular
+              value: $expr(content.provider)
+            }
+          }
+        }
+			}
+		}
+	}
+}

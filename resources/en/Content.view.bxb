@@ -8,6 +8,11 @@ result-view {
 						expression(result)
 					}
 				}
+				layout-macro (content-more) {
+					param (content) {
+						expression(result)
+					}
+				}
 			}
 		}
 		else-if (size(result) > 1) {
@@ -23,69 +28,19 @@ result-view {
 		}
 	}
 	conversation-drivers {
-		if (size(result) == 1) {
-			if ("provider == 'netflix'") {
-				conversation-driver {
-					template ("Another from Netflix")
-				}
-				conversation-driver {
-					template ("Recommendation from Amazon Prime Video")
-				}
-				conversation-driver {
-					template ("Recommendation from Apple TV Plus")
-				}
-			} else-if ("provider == 'amazon prime video'") {
-				conversation-driver {
-					template ("Another from Amazon Prime Video")
-				}
-				conversation-driver {
-					template ("Recommendation from Netflix")
-				}
-				conversation-driver {
-					template ("Recommendation from Apple TV Plus")
-				}
-			} else-if ("provider == 'apple tv plus'") {
-				conversation-driver {
-					template ("Another from Apple TV Plus")
-				}
-				conversation-driver {
-					template ("Recommendation from Amazon Prime Video")
-				}
-				conversation-driver {
-					template ("Recommendation from Netflix")
-				}
+		if (size(result) > 1) {
+			conversation-driver {
+				template ("Get more results from #{upper(result[0].provider)}")
 			}
-		} else-if (size(result) > 1) {
-			if ("result[0].provider == 'netflix'") {
-				conversation-driver {
-					template ("More from Netflix")
-				}
-				conversation-driver {
-					template ("Popular titles from Amazon Prime Video")
-				}
-				conversation-driver {
-					template ("Popular titles from Apple TV Plus")
-				}
-			} else-if ("result[0].provider == 'amazon prime video'") {
-				conversation-driver {
-					template ("More from Amazon Prime Video")
-				}
-				conversation-driver {
-					template ("Popular titles from from Netflix")
-				}
-				conversation-driver {
-					template ("Popular titles from from Apple TV Plus")
-				}
-			} else-if ("result[0].provider == 'apple tv plus'") {
-				conversation-driver {
-					template ("More from Apple TV Plus")
-				}
-				conversation-driver {
-					template ("Popular titles from from Amazon Prime Video")
-				}
-				conversation-driver {
-					template ("Popular titles from from Netflix")
-				}
+			conversation-driver {
+				template ("Get results for another provider")
+			}
+		} else-if (size(result) == 1) {
+			conversation-driver {
+				template ("Recommend another from #{upper(result[0].provider)}")
+			}
+			conversation-driver {
+				template ("Recommend something from another provider")
 			}
 		}
 	}

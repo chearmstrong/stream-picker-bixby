@@ -3,3 +3,8 @@ train (t-p3ntn2a99x2eshrx8qe681j4t) {
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIgYmBEYgZgCQjAwhA+QA=)
   last-modified (1574008072078)
 }
+train (t-ptje1jubag3ujw47ym4kyfju4) {
+  utterance ([g:recommend:continue] recommend something from another provider)
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDA4wGAA==)
+  last-modified (1574080268825)
+}

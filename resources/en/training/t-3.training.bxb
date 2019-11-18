@@ -1,0 +1,5 @@
+train (t-3ybagvv7n3uqww342ohkomtl2) {
+  utterance ("[g:chearmstrong.streamPicker.recommend:continue:recommend] recommend another from (amazon prime video)[v:chearmstrong.streamPicker.ContentProvider:'amazon prime video']")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
+  last-modified (1574080190764)
+}

@@ -20,6 +20,10 @@ structure (Content) {
     type (ContentProvider)
     min (Required) max (One)
   }
+  property (providerShort) {
+    type (ContentProviderShort)
+    min (Required) max (One)
+  }
   property (play) {
     type (ContentProviderLink)
     min (Optional) max (One)
