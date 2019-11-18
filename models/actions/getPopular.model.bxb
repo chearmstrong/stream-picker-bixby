@@ -32,7 +32,11 @@ action (getPopular) {
 						value: ContentProvider(disney plus)
 						value: ContentProvider(hulu)
 						value: ContentProvider(hbo now)
-						
+					}
+				} else {
+					intent {
+						goal: ContentProvider
+						value: ContentProvider(netflix)
 					}
 				}
 			}
