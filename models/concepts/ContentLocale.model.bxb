@@ -1,0 +1,3 @@
+text (ContentLocale) {
+  description (The locale of the content)
+}

@@ -2,21 +2,44 @@ action (getPopular) {
 	type(Search)
 	description (Get popular content)
 	collect {
+		input (locale) {
+			type (ContentLocale)
+			default-init {
+				intent {
+					goal: getLocale // fills the locale using $vivContext
+				}
+			}
+			hidden
+		}
 		input (provider) {
 			type (ContentProvider)
 			min (Required) max (One)
 			default-init {
-        intent {
-          goal: ContentProvider
+				if (locale == 'en-GB') {
+				intent {
+					goal: ContentProvider
 					value: ContentProvider(netflix)
 					value: ContentProvider(amazon prime video)
 					value: ContentProvider(apple tv plus)
 					value: ContentProvider(disney life)
-					value: ContentProvider(hulu)
-					value: ContentProvider(hbo now)
-					value: ContentProvider(disney plus)
-        }
-      }
+				}					
+				} else-if (locale == 'en-US') {
+					intent {
+						goal: ContentProvider
+						value: ContentProvider(netflix)
+						value: ContentProvider(amazon prime video)
+						value: ContentProvider(apple tv plus)
+						value: ContentProvider(disney plus)
+						value: ContentProvider(hulu)
+						value: ContentProvider(hbo now)
+					}
+				} else {
+					intent {
+						goal: ContentProvider
+						value: ContentProvider(netflix)
+					}
+				}
+			}
 		}
 	}
 	output (Content) {
@@ -27,7 +50,7 @@ action (getPopular) {
 						dialog {
 							template ("Oops! Something went wrong - please try again.")
 						}
-        	}
+					}
 				}
 			}
 		}

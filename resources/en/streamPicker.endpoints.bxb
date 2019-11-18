@@ -8,5 +8,9 @@ endpoints {
       accepted-inputs (provider, $vivContext)
       local-endpoint (getPopular.js)
     }
+    action-endpoint (getLocale) {
+      accepted-inputs ($vivContext)
+      local-endpoint (getLocale.js)
+    }
   }
 }
