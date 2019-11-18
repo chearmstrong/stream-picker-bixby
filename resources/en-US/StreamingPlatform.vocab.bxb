@@ -3,6 +3,6 @@ vocab (ContentProvider) {
   "apple tv plus" { "apple tv plus", "apple", "apple tv", "apple tv+", "apple tv +" }
   "amazon prime video" { "amazon prime video", "amazon prime", "prime video", "amazon video", "amazon" }
   "hulu" { "hulu" }
-  "hbo now" { "hbo now", "h.b.o. now", "hbo" }
+  "hbo now" { "hbo now", "hbo", "h b o" }
   "disney plus" { "disney plus", "disney" }
 }
