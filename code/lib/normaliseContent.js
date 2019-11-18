@@ -1,13 +1,10 @@
-const { log } = require('console')
-
-const backdropProfile = 's640'
-const posterProfile = 's332'
-const imageBaseUrl = 'https://images.justwatch.com'
-const providerDict = {
-  'apple tv plus': 350,
-  'amazon prime video': 9,
-  'netflix': 8
-}
+const {
+  providerIds,
+  backdropProfile,
+  posterProfile,
+  imageBaseUrl,
+  providerDict
+} = require('../constants/justWatch.js')
 
 /**
  * Gets the avarage rating score from IMDB and TMDB.
@@ -40,7 +37,7 @@ const getStreamingLink = (content, provider) => {
 
   const filtered = content.offers.filter(item => {
     return item.monetization_type === 'flatrate'
-      && item.provider_id === providerDict[provider]
+      && item.provider_id === providerIds[provider]
       && (item.urls && item.urls.standard_web)
   })
 
@@ -87,7 +84,8 @@ const normaliseContent = (content, poster, provider, trailerStream, youTubeId) =
     provider: provider,
     backdrop: getJustWatchBackdrop(content),
     poster: getJustWatchPoster(content),
-    play: getStreamingLink(content, provider)
+    play: getStreamingLink(content, provider),
+    providerShort: providerDict[provider]
   }
 
   // CONDITIONAL ITEMS

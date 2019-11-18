@@ -1,8 +1,3 @@
-train (t-i3xxzewgiejsref7gzqdykmjw) {
-  utterance ("[g:chearmstrong.streamPicker.getPopular:continue:getPopular] Popular titles from (amazon prime video)[v:chearmstrong.streamPicker.ContentProvider:'amazon prime video']")
-  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIgYmBEYgZgCQjAwhA+QA=)
-  last-modified (1573831013558)
-}
 train (t-i8ppl0wqe5bgdedgunem99cpm) {
   utterance ("[g:recommend] what can i watch on (apple tv plus)[v:ContentProvider:'apple tv plus']")
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)

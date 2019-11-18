@@ -3,6 +3,11 @@ train (t-wbo12kvz72o9pyyxpaby1y8a0) {
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIgYmBEYgZgCQjAwhA+QA=)
   last-modified (1574008010682)
 }
+train (t-wltk26hzhktw5vd0mifodwmnr) {
+  utterance ("[g:recommend:continue] recommend another from (netflix)[v:ContentProvider:netflix]")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
+  last-modified (1574080155571)
+}
 train (t-wq5dgnutdrlx6lqx4lhn1jel0) {
   utterance ("[g:recommend:continue] another from (amazon prime video)[v:ContentProvider:'amazon prime video']")
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)

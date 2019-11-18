@@ -1,0 +1,3 @@
+text (ContentProviderShort) {
+  description (The short code for the content provider)
+}

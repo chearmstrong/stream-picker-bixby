@@ -1,15 +1,12 @@
 const { getUrl } = require('http')
 const cfg = require('config')
 const getLocaleSlug = require('../lib/getLocaleSlug.js')
+const { providerDict } = require('../constants/justWatch.js')
 
 const baseUrl = cfg.get('justWatch.baseUrl')
 const pageSize = parseInt(cfg.get('justWatch.pageSize'))
 
-const providerDict = {
-  'apple tv plus': 'atp',
-  'amazon prime video': 'amp',
-  'netflix': 'nfx'
-}
+
 
 // Local functions
 

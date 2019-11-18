@@ -1,0 +1,20 @@
+hints {
+  uncategorized {
+    hint ("Ask Stream Picker what's popular on Netflix")
+    hint ("Ask Stream Picker what's popular on Apple TV Plus")
+    hint ("Ask Stream Picker what's popular on Amazon Prime Video")
+    hint ("Ask Stream Picker what's popular on Disney Life")
+    hint ("Ask Stream Picker to give me some suggestions from Netflix")
+    hint ("Ask Stream Picker to give me some suggestions from Apple TV Plus")
+    hint ("Ask Stream Picker to give me some suggestions from Amazon Prime Video")
+    hint ("Ask Stream Picker to give me some suggestions from Disney Life")
+    hint ("Ask Stream Picker to recommend something to watch on Netflix")
+    hint ("Ask Stream Picker to recommend something to watch on Apple TV Plus")
+    hint ("Ask Stream Picker to recommend something to watch on Amazon Prime Video")
+    hint ("Ask Stream Picker to recommend something to watch on Disney Life")
+    hint ("Ask Stream Picker to suggest something to watch on Netflix")
+    hint ("Ask Stream Picker to suggest something to watch on Apple TV Plus")
+    hint ("Ask Stream Picker to suggest something to watch on Amazon Prime Video")
+    hint ("Ask Stream Picker to suggest something to watch on Disney Life")
+  }
+}

@@ -8,6 +8,9 @@ layout-macro-def (content-provider) {
 	content {
 		image-card {
 			image-object-fit (Contain)
+			aspect-ratio (1:1)
+			text-position (Below)
+			column-size (Three)
 			title-area {
 				halign (Center)
 				slot1 {
@@ -18,7 +21,7 @@ layout-macro-def (content-provider) {
 				}
 			}
 			// This would need updated if I extend the supported providers
-			image-url ("images/#{provider == 'apple tv plus' ? 'atp' : provider == 'amazon prime video' ? 'amp' : 'nfx'}.png")
+			image-url ("images/#{provider == 'apple tv plus' ? 'atp' : provider == 'amazon prime video' ? 'amp' : provider == 'hulu' ? 'hlu' : provider == 'disney plus' ? 'dnp' : provider == 'disney life' ? 'dli' : provider == 'hbo now' ? 'hbn' : 'nfx'}.jpg")
 		}
 	}
 }

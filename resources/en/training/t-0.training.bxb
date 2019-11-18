@@ -3,3 +3,8 @@ train (t-06dpvp1uiekt1bkkmxn3bb4qn) {
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
   last-modified (1573491102070)
 }
+train (t-0gilf5ufareed9ejphcpv1rxd) {
+  utterance ("[g:chearmstrong.streamPicker.getPopular:continue:getPopular] get more results from (amazon prime video)[v:chearmstrong.streamPicker.ContentProvider:'amazon prime video']")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIgYmBEYgZgCQjAwhA+QA=)
+  last-modified (1574080011880)
+}
