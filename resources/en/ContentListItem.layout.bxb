@@ -1,0 +1,32 @@
+layout-macro-def (content-list-item) {
+	params {
+		param (listItem) {
+			type (Content)
+			min (Required) max (One)
+		}
+	}
+	content {
+		image-card {
+			aspect-ratio (21:9)
+			image-object-fit (Cover)
+			title-area {
+				halign (Center)
+				slot1 {
+					text {
+						value ("#{value(listItem.title)}")
+						style(Detail_L)
+					}
+				}
+				slot2 {
+					single-line {
+						text {
+							value ("#{value(listItem.year)} #{value(listItem.type)}")
+							style(Detail_L_Soft)
+						}
+					}
+				}
+			}
+			image-url ("[#{exists(listItem.backdrop) ? value(listItem.backdrop) : value(listItem.poster)}]")
+		}
+	}
+}

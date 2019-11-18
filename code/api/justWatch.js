@@ -1,15 +1,66 @@
 const { getUrl } = require('http')
 const cfg = require('config')
+const getLocaleSlug = require('../lib/getLocaleSlug.js')
 
 const baseUrl = cfg.get('justWatch.baseUrl')
 const pageSize = parseInt(cfg.get('justWatch.pageSize'))
 
-const supportedProviders = ['atp', 'amp', 'ntx']
 const providerDict = {
   'apple tv plus': 'atp',
   'amazon prime video': 'amp',
   'netflix': 'nfx'
 }
+
+// Local functions
+
+/**
+ * Get random content from the popular list, based on the given provider.
+ * 
+ * @param {String} provider
+ * @param {string} locale
+ * @return {Object|null}
+ */
+const getRandomTitleByProvider = (provider, locale) => {
+  const items = getPopularTitles(provider, locale)
+
+  if (!items) {
+    return null
+  }
+  
+  const index = (Math.floor(Math.random() * items.length) + 1) - 1
+  const { id, object_type } = items[index]
+  const content = getTitleDetailed(id, object_type, locale)
+
+  return content
+}
+
+/**
+ * Get 10 items from the popular list, based on the given provider.
+ * 
+ * @param {String} provider
+ * @param {string} locale
+ * @return {Array|null}
+ */
+const getPopularTitlesByProvider = (provider, locale) => {
+  const items = getPopularTitles(provider, locale)
+
+  if (!items) {
+    return null
+  }
+
+  const index = (Math.floor(Math.random() * items.length) + 1) - 1
+  const chunk = items.length <= 10 // TODO: Can this be better?
+    ? items
+    : index <= 9
+    ? items.slice(index, index + 10)
+    : items.slice(index - 10, index) 
+
+  const contentArray = chunk.map(content => getTitleDetailed(content.id, content.object_type, locale))
+
+  return contentArray
+}
+
+// API Functions
 
 /**
  * Gets the full details for the content ID passed in.
@@ -20,28 +71,29 @@ const providerDict = {
  * @return {Object}
  */
 const getTitleDetailed = (id, type, locale) => {
+  const localeSlug = getLocaleSlug(locale)
   const options = {
     format: 'json',
     query: {
       language: 'en'
     }
   }
-  const url = baseUrl + '/content/titles/' + type + '/' + id + '/locale/' + locale
+  const url = baseUrl + '/content/titles/' + type + '/' + id + '/locale/' + localeSlug
   const response = getUrl(url, options)
 
   return response
 }
 
 /**
- * Get random content from the popular list, based on the given provider.
+ * Gets the polular list for the given provider.
  * 
  * @param {String} provider
- * @param {string} locale
- * @return {Object|null}
+ * @param {String} locale
+ * @return {Array}
  */
-const getRandomTitleByProvider = (provider, locale) => {
+const getPopularTitles = (provider, locale) => {
   const providers = provider ? [providerDict[provider]] : supportedProviders
-  const localeSlug = locale.replace(/\-/g, '_')
+  const localeSlug = getLocaleSlug(locale)
   const options = {
     format: 'json',
     query: {
@@ -58,14 +110,11 @@ const getRandomTitleByProvider = (provider, locale) => {
   if (!response.items || !response.items.length) {
     return null
   }
-  
-  const index = (Math.floor(Math.random() * response.items.length) + 1) - 1
-  const { id, object_type } = response.items[index]
-  const content = getTitleDetailed(id, object_type, localeSlug)
 
-  return content
+  return response.items
 }
 
 module.exports = {
-  getRandomTitleByProvider: getRandomTitleByProvider
+  getRandomTitleByProvider: getRandomTitleByProvider,
+  getPopularTitlesByProvider: getPopularTitlesByProvider
 }

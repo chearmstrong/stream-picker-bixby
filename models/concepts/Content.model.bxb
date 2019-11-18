@@ -1,5 +1,9 @@
 structure (Content) {
-  description (A Content)
+  description (Content model)
+  property (youTubeId) {
+    type (YouTubeId)
+    min (Optional) max (One)
+  }
   property (title) {
     type (ContentTitle)
     min (Required) max (One)
@@ -38,6 +42,10 @@ structure (Content) {
   }
   property (poster) {
     type (content_poster.Url)
+    min (Optional) max (One)
+  }
+  property (backdrop) {
+    type (ContentBackdrop)
     min (Optional) max (One)
   }
   property (type) {

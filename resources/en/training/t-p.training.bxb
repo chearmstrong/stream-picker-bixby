@@ -1,0 +1,5 @@
+train (t-p3ntn2a99x2eshrx8qe681j4t) {
+  utterance ("[g:getPopular] give me some suggestions from (amazon prime video)[v:ContentProvider:'amazon prime video']")
+  plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIgYmBEYgZgCQjAwhA+QA=)
+  last-modified (1574008072078)
+}

@@ -2,6 +2,7 @@ capsule-info {
   display-name (Stream Picker)
   developer-name (Che Armstrong)
   icon-asset (images/icon.png)
+  website-url (http://www.chearmstrong.com/stream-picker)
   description ("You want to watch something on your favourite streaming provider, but find yourself endless scrolling through the avalable titles... You can't make a decision! Why not make your life easier and get Stream Picker to recommend something for you?! Netflix, Amazon Prime Video and Apple TV+ are currently supported - more providers will be added soon. Powered by the awesome Just Watch (justwatch.com) and The Movie DB (themoviedb.org) APIs - trailers from YouTube (youtube.com). Note: You'll need a subscription with the relevant streaming provider to watch content.")
   search-keywords {
     keyword (stream picker)

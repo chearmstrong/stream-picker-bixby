@@ -24,14 +24,38 @@ const getMovieTrailerStream = youTubeId => {
   try {
     const response = getUrl(url, options)
     
-    if (!response.url) {
-      return null
-    }
-
     return response.url
   } catch (_) {
     return null // If it throws, just return `null` - it doesn't matter
   }
 }
 
-module.exports = getMovieTrailerStream
+/**
+ * Uses the Movie Critic API (my API) to fetch MANY MP4 streaming URLs
+ * for a list of YouTube videos.
+ * 
+ * If there is an error, it doesn't matter and we just return `null`.
+ * 
+ * @param {Array} youTubeIds
+ * @return {Object|null}
+ */
+const getManyMovieTrailerStreams = youTubeIds => {
+  const options = {
+    format: 'json',
+    headers: { 'x-api-key': apiKey },
+  }
+  const url = baseUrl + '?ids=' + youTubeIds.join(',')
+
+  try {
+    const response = getUrl(url, options)
+    
+    return response
+  } catch (_) {
+    return null // If it throws, just return `null` - it doesn't matter
+  }
+}
+
+module.exports = {
+  getMovieTrailerStream: getMovieTrailerStream,
+  getManyMovieTrailerStreams: getManyMovieTrailerStreams
+}

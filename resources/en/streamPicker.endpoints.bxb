@@ -4,5 +4,9 @@ endpoints {
       accepted-inputs (provider, $vivContext)
       local-endpoint (recommend.js)
     }
+    action-endpoint (getPopular) {
+      accepted-inputs (provider, $vivContext)
+      local-endpoint (getPopular.js)
+    }
   }
 }

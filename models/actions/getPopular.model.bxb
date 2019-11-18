@@ -1,0 +1,31 @@
+action (getPopular) {
+	type(Search)
+	description (Get popular content)
+	collect {
+		input (provider) {
+			type (ContentProvider)
+			min (Required) max (One)
+			default-init {
+        intent {
+          goal: ContentProvider
+					value:  ContentProvider(netflix)
+					value:  ContentProvider(amazon prime video)
+					value:  ContentProvider(apple tv plus)
+        }
+      }
+		}
+	}
+	output (Content) {
+		throws {
+			unknown-error {
+				on-catch {
+					halt {
+						dialog {
+							template ("Oops! Something went wrong - please try again.")
+						}
+        	}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+dialog (Result) {
+	match: Content (content) {
+    from-output: getPopular(action)
+  }
+  if (size(content) > 1) {
+    choose (Random) {
+      template ("Here's a selection of what's popular on #{upper(action.provider)} right now. 📺") {
+        speech ("Here's a selection of what's popular on #{upper(action.provider)} right now.")
+      }
+      template ("#{upper(action.provider)} has a lot to offer! Here's some of their popular titles. 📺") {
+        speech ("#{upper(action.provider)} has a lot to offer! Here's some of their popular titles.")
+      }
+      template ("Check out some of these popular titles on #{upper(action.provider)}. 📺") {
+        speech ("Check out some of these popular titles on #{upper(action.provider)}.")
+      }
+      template ("Here's some of #{upper(action.provider)}'s popular titles to check out. 📺") {
+        speech ("Here's some of #{upper(action.provider)}'s popular titles to check out.")
+      }
+    }
+  } else {
+    choose (Random) {
+      template ("Here's #{value(title)}. A popular #{value(type)} which was originally released in #{value(year)}. 📺") {
+        speech ("Here's #{value(title)}. A popular #{value(type)} which was originally released in #{value(year)}.")
+      }
+      template ("Released in #{value(year)}, #{value(title)}, is a popular #{value(type)} on #{upper(action.provider)}. 📺") {
+        speech ("Released in #{value(year)}, #{value(title)}, is a popular #{value(type)} on #{upper(action.provider)}.")
+      }
+      template ("The #{value(year)} #{value(type)}, #{value(title)}, is really popular with #{upper(action.provider)} users. 📺") {
+        speech ("The #{value(year)} #{value(type)}, #{value(title)}, is really popular with #{upper(action.provider)} users.")
+      }
+    }
+  }
+}
