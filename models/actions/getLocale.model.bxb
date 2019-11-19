@@ -1,5 +1,0 @@
-action (getLocale) {
-  type(Constructor)
-  description (Get the user's locale)
-  output (ContentLocale)
-}

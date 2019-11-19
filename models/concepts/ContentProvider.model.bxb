@@ -10,4 +10,10 @@ enum (ContentProvider) {
   symbol (hbo now)
   symbol (disney plus)
   symbol (disney life)
+  symbol (starz on amazon)
+  symbol (starzplay)
+  symbol (showtime on amazon)
+  symbol (showtime)
+  symbol (hbo on amazon)
+  symbol (now tv)
 }

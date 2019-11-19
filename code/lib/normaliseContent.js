@@ -1,10 +1,11 @@
 const {
-  providerIds,
+  providers,
   backdropProfile,
   posterProfile,
-  imageBaseUrl,
-  providerDict
+  imageBaseUrl
 } = require('../constants/justWatch.js')
+
+const getProviderDetails = provider => providers.find(item => item.name === provider)
 
 /**
  * Gets the avarage rating score from IMDB and TMDB.
@@ -30,14 +31,14 @@ const getRating = scores => {
  * @param {String} provider
  * @return {String|null}
  */
-const getStreamingLink = (content, provider) => {
+const getStreamingLink = (content, providerDetails) => {
   if (!content.offers || !content.offers.length) {
     return null
   }
 
   const filtered = content.offers.filter(item => {
     return item.monetization_type === 'flatrate'
-      && item.provider_id === providerIds[provider]
+      && item.provider_id === providerDetails.id
       && (item.urls && item.urls.standard_web)
   })
 
@@ -69,11 +70,12 @@ const getJustWatchBackdrop = content => {
  * 
  * @param {Object} content
  * @param {Sring} poster - URL of the poster image
- * @param {String} provider
+ * @param {String} provider - name of the provider
  * @param {String} trailerStream - URL of the trailer stream
  * @return {Object}
  */
 const normaliseContent = (content, poster, provider, trailerStream, youTubeId) => {
+  const providerDetails = getProviderDetails(provider)
   const normalised = {
     title: content.title,
     rating: getRating(content.scoring) || null,
@@ -84,8 +86,8 @@ const normaliseContent = (content, poster, provider, trailerStream, youTubeId) =
     provider: provider,
     backdrop: getJustWatchBackdrop(content),
     poster: getJustWatchPoster(content),
-    play: getStreamingLink(content, provider),
-    providerShort: providerDict[provider]
+    play: getStreamingLink(content, providerDetails),
+    providerShort: providerDetails.shortCode || null
   }
 
   // CONDITIONAL ITEMS

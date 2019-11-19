@@ -1,5 +1,10 @@
 vocab (ContentProvider) {
   "hulu" { "hulu" }
-  "hbo now" { "hbo now", "hbo", "h b o" }
+  "hbo now" { "hbo now", "hbo" }
   "disney plus" { "disney plus", "disney" }
+  "starzplay" { "starzplay", "starz play", "starz" }
+  "showtime" { "showtime", "show time", "sho" }
+  "starz on amazon" { "starz on amazon", "starz on amazon prime", "starz on prime video", "starzplay on amazon", "starzplay on amazon prime", "starzplay on prime video", "starz play on amazon", "starz play on amazon prime", "starz play on prime video" }
+  "showtime on amazon" { "showtime on amazon", "showtime on amazon prime", "showtime on prime video", "show time on amazon", "show time on amazon prime", "show time on prime video" }
+  "hbo on amazon" { "hbo on amazon", "hbo on amazon prime", "hbo on prime video", "hbo now on amazon", "hbo now on amazon prime", "hbo now on prime video", "h b o on amazon", "h b o on amazon prime", "h b o on prime video", "h b o now on amazon", "h b o now on amazon prime", "h b o now on prime video" }
 }
