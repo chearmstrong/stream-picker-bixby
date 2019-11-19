@@ -21,7 +21,7 @@ layout-macro-def (content-provider) {
 				}
 			}
 			// This would need updated if I extend the supported providers
-			image-url ("images/#{provider == 'apple tv plus' ? 'atp' : provider == 'amazon prime video' ? 'amp' : provider == 'hulu' ? 'hlu' : provider == 'disney plus' ? 'dnp' : provider == 'disney life' ? 'dli' : provider == 'hbo now' ? 'hbn' : 'nfx'}.jpg")
+			image-url ("images/#{provider == 'apple tv plus' ? 'atp' : provider == 'amazon prime video' ? 'amp' : provider == 'hulu' ? 'hlu' : provider == 'disney plus' ? 'dnp' : provider == 'disney life' ? 'dli' : provider == 'hbo now' ? 'hbn' : provider == 'starz on amazon' ? 'ast' : provider == 'showtime on amazon' ? 'ash' : provider == 'starzplay' ? 'stz' : provider == 'showtime' ? 'sho' : provider == 'hbo on amazon' ? 'ahb': provider == 'now tv' ? 'ntv' : 'nfx'}.jpg")
 		}
 	}
 }

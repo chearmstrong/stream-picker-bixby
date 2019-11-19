@@ -1,3 +1,5 @@
 vocab (ContentProvider) {
   "disney life" { "disney life", "disney" }
+  "starz on amazon" { "starz on amazon", "starz on amazon prime", "starz on prime video", "starzplay on amazon", "starzplay on amazon prime", "starzplay on prime video", "starz play on amazon", "starz play on amazon prime", "starz play on prime video" }
+  "now tv" { "now tv", "sky now tv", "now t v" }
 }

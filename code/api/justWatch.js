@@ -1,7 +1,7 @@
 const { getUrl } = require('http')
 const cfg = require('config')
 const getLocaleSlug = require('../lib/getLocaleSlug.js')
-const { providerDict } = require('../constants/justWatch.js')
+const { providers } = require('../constants/justWatch.js')
 
 const baseUrl = cfg.get('justWatch.baseUrl')
 const pageSize = parseInt(cfg.get('justWatch.pageSize'))
@@ -89,14 +89,18 @@ const getTitleDetailed = (id, type, locale) => {
  * @return {Array}
  */
 const getPopularTitles = (provider, locale) => {
-  const providers = provider ? [providerDict[provider]] : supportedProviders
+  if (!provider || !locale) {
+    return null
+  }
+
+  const providerList = [providers[provider].shortCode]
   const localeSlug = getLocaleSlug(locale)
   const options = {
     format: 'json',
     query: {
       body: JSON.stringify({
         monetization_types: ['flatrate'], // flatrate === streaming service like netflix
-        providers: providers,
+        providers: providerList,
         'page_size': pageSize
       })
     }

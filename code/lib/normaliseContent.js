@@ -1,9 +1,8 @@
 const {
-  providerIds,
+  providers,
   backdropProfile,
   posterProfile,
-  imageBaseUrl,
-  providerDict
+  imageBaseUrl
 } = require('../constants/justWatch.js')
 
 /**
@@ -37,7 +36,7 @@ const getStreamingLink = (content, provider) => {
 
   const filtered = content.offers.filter(item => {
     return item.monetization_type === 'flatrate'
-      && item.provider_id === providerIds[provider]
+      && item.provider_id === providers[provider].id
       && (item.urls && item.urls.standard_web)
   })
 
@@ -85,7 +84,7 @@ const normaliseContent = (content, poster, provider, trailerStream, youTubeId) =
     backdrop: getJustWatchBackdrop(content),
     poster: getJustWatchPoster(content),
     play: getStreamingLink(content, provider),
-    providerShort: providerDict[provider]
+    providerShort: providers[provider].shortCode
   }
 
   // CONDITIONAL ITEMS
