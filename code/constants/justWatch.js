@@ -1,57 +1,83 @@
-const providers = {
-  'apple tv plus': {
+const providers = [
+  {
+    name: 'apple tv plus',
     shortCode: 'atp',
-    id: 350
+    id: 350,
+    locales: ['en-US', 'en-GB']
   },
-  'amazon prime video': {
+  {
+    name: 'amazon prime video',
     shortCode: 'amp',
-    id: 9
+    id: 9,
+    locales: ['default']
   },
-  'netflix': {
+  {
+    name: 'netflix',
     shortCode: 'nfx',
-    id: 8
+    id: 8,
+    locales: ['default']
   },
-  'hulu': {
+  {
+    name: 'hulu',
     shortCode: 'hlu',
-    id: 15
-  }, // US only
-  'hbo now': {
+    id: 15,
+    locales: ['en-US']
+  },
+  {
+    name: 'hbo now',
     shortCode: 'hbn',
-    id: 27
-  }, // US only
-  'disney plus': {
+    id: 27,
+    locales: ['en-US']
+  },
+  {
+    name: 'disney plus',
     shortCode: 'dnp',
-    id: 337
-  }, // US only
-  'disney life': {
+    id: 337,
+    locales: ['en-US']
+  },
+  {
+    name: 'disney life',
     shortCode: 'dli',
-    id: 129
-  }, // UK only
-  'starz on amazon': {
+    id: 129,
+    locales: ['en-GB']
+  },
+  {
+    name: 'starz on amazon',
     shortCode: 'ast',
-    id: 194
-  }, // UK and US only
-  'showtime on amazon': {
+    id: 194,
+    locales: ['en-US', 'en-GB']
+  },
+  {
+    name: 'showtime on amazon',
     shortCode: 'ash',
-    id: 203
-  }, // US only
-  'starzplay': {
+    id: 203,
+    locales: ['en-US']
+  },
+  {
+    name: 'starzplay',
     shortCode: 'stz',
-    id: 43
-  }, // US Only
-  'showtime': {
-    shortCode: 'sho',
-    id: 37
-  }, // US Only
-  'hbo on amazon': {
+    id: 43,
+    locales: ['en-US']
+  },
+  {
+    name: 'hbo on amazon',
     shortCode: 'ahb',
-    id: 200
-  }, // US only
-  'now tv': {
+    id: 200,
+    locales: ['en-US']
+  },
+  {
+    name: 'now tv',
     shortCode: 'ntv',
-    id: 39
+    id: 39,
+    locales: ['en-GB']
+  },
+  {
+    name: 'showtime',
+    shortCode: 'sho',
+    id: 37,
+    locales: ['en-US']
   }
-}
+]
 
 const backdropProfile = 's640'
 const posterProfile = 's332'

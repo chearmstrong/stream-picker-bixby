@@ -2,11 +2,12 @@ action (getPopular) {
 	type(Search)
 	description (Get popular content)
 	collect {
-		input (locale) {
-			type (ContentLocale)
+		input (providerDetails) {
+			type (ContentProviderDetails)
+			max (Many)
 			default-init {
 				intent {
-					goal: getLocale // fills the locale using $vivContext
+					goal: getProviders
 				}
 			}
 			hidden
@@ -15,38 +16,9 @@ action (getPopular) {
 			type (ContentProvider)
 			min (Required) max (One)
 			default-init {
-				if (locale == 'en-GB') {
 				intent {
 					goal: ContentProvider
-					value: ContentProvider(netflix)
-					value: ContentProvider(amazon prime video)
-					value: ContentProvider(apple tv plus)
-					value: ContentProvider(disney life)
-					value: ContentProvider(starz on amazon)
-					value: ContentProvider(now tv)
-				}					
-				} else-if (locale == 'en-US') {
-					intent {
-						goal: ContentProvider
-						value: ContentProvider(netflix)
-						value: ContentProvider(amazon prime video)
-						value: ContentProvider(disney plus)
-						value: ContentProvider(hulu)
-						value: ContentProvider(hbo now)
-						value: ContentProvider(starzplay)
-						value: ContentProvider(showtime)
-						value: ContentProvider(apple tv plus)
-						value: ContentProvider(hbo on amazon)
-						value: ContentProvider(starz on amazon)
-						value: ContentProvider(showtime on amazon)
-					}
-				} else {
-					intent {
-						goal: ContentProvider
-						value: ContentProvider(netflix)
-						value: ContentProvider(amazon prime video)
-						value: ContentProvider(apple tv plus)
-					}
+					value: $expr(providerDetails)
 				}
 			}
 		}

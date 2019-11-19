@@ -1,0 +1,19 @@
+structure (ContentProviderDetails) {
+  description (Content provider details)
+  property (name) {
+    type (ContentProvider)
+    min (Required) max (One)
+  }
+  property (shortCode) {
+    type (ContentProviderShort)
+    min (Required) max (One)
+  }
+  property (id) { // Don't care about this
+    type (viv.core.Integer)
+    min (Optional) max (One)
+  }
+  property (locales) { // Don't care about this
+    type (ContentLocale)
+    min (Optional) max (Many)
+  }
+}

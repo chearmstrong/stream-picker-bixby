@@ -1,0 +1,5 @@
+action (getProviders) {
+  type(Constructor)
+  description (Get the providers list)
+  output (ContentProviderDetails)
+}

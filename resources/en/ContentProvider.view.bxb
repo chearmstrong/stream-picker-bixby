@@ -1,5 +1,5 @@
 input-view {
-  match: ContentProvider (this)
+  match: ContentProviderDetails (this)
   message {
     template (Choose your streaming content provider. Please note, some providers may not provide content in your locale. 👇) {
       speech (Choose your streaming content provider.)
@@ -7,10 +7,10 @@ input-view {
   }
   render {
     selection-of (this) {
-      where-each (one) {
+      where-each (item) {
         layout-macro (content-provider) {
           param (provider) {
-            expression (one)
+            expression (item)
           }
         }
       }
