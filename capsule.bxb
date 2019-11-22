@@ -1,12 +1,15 @@
 capsule {
   id (chearmstrong.streamPicker)
-  version (1.4.0)
+  version (1.4.1)
   format (3)
   targets {
     target (bixby-mobile-en)
   }
   store-sections {
     section (MoviesAndTV)
+  }
+  store-countries {
+    all
   }
   capsule-imports {
     import (viv.image) {
