@@ -4,11 +4,14 @@ const errorNotify = require('./lib/errorNotify.js')
 const { getManyMovieTrailerStreams } = require('./api/mc.js')
 const getYouTubeId = require('./lib/getYouTubeId.js')
 const getTmdbId = require('./lib/getTmdbId.js')
+const db = require('./services/db.js')
 
 module.exports.function = function getPopular(provider, $vivContext) {
   try {
     provider = provider ? provider.toString() : provider // To deal with bug
-    const { locale } = $vivContext
+    const { locale, bixbyUserId } = $vivContext
+
+    db.put(bixbyUserId, { favourites: [{ test: 'test' }] })
     
     const content = getPopularTitlesByProvider(provider, locale)
 
@@ -46,7 +49,7 @@ module.exports.function = function getPopular(provider, $vivContext) {
     return normalisedContent
   } catch (error) {
     // If we get an error, send a notification
-    errorNotify({ context: $vivContext, error: error, other: { provider: provider } })
+    // errorNotify({ context: $vivContext, error: error, other: { provider: provider } })
 
     throw error
   }
