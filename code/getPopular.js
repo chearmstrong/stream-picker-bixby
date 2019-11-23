@@ -46,7 +46,7 @@ module.exports.function = function getPopular(provider, $vivContext) {
     return normalisedContent
   } catch (error) {
     // If we get an error, send a notification
-    // errorNotify({ context: $vivContext, error: error, other: { provider: provider } })
+    errorNotify({ context: $vivContext, error: error, other: { provider: provider } })
 
     throw error
   }
