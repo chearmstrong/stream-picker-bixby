@@ -1,4 +1,7 @@
 vocab (ContentProvider) {
+  "netflix" { "netflix", "net flix", "net flicks" }
+  "apple tv plus" { "apple tv plus", "apple", "apple tv", "apple tv+", "apple tv +" }
+  "amazon prime video" { "amazon prime video", "amazon prime", "prime video", "amazon video", "amazon" }
   "hulu" { "hulu" }
   "hbo now" { "hbo now", "hbo" }
   "disney plus" { "disney plus", "disney" }
