@@ -8,7 +8,7 @@ const getTmdbId = require('./lib/getTmdbId.js')
 module.exports.function = function getPopular(provider, $vivContext) {
   try {
     provider = provider ? provider.toString() : provider // To deal with bug
-    const { locale } = $vivContext
+    const { locale, bixbyUserId } = $vivContext
     
     const content = getPopularTitlesByProvider(provider, locale)
 
