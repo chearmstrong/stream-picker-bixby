@@ -1,0 +1,10 @@
+train (t-qptbxdzjmnkdlm3874d8vumw0) {
+  utterance ("[g:chearmstrong.streamPicker.getPopular] give me some (movies)[v:chearmstrong.streamPicker.ContentType:movie] from (amazon prime video)[v:chearmstrong.streamPicker.ContentProvider:'amazon prime video']")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIQZWg0pDKglQGZgZGBiYgyQCkQRAC4KIA)
+  last-modified (1575294170806)
+}
+train (t-qwx6qc4rj9n2sy0pwwx582ku2) {
+  utterance ("[g:getPopular] what (movies)[v:ContentType:movie] are popular on (netflix)[v:ContentProvider:netflix]")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIQZWg0pDKglQGZgZGBiYgyQCkQRAC4KIA)
+  last-modified (1575294701537)
+}

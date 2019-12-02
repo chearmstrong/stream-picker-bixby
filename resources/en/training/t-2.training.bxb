@@ -1,0 +1,5 @@
+train (t-2lj40633428koyex2qjh9owkz) {
+  utterance ("[g:chearmstrong.streamPicker.recommend:continue:recommend] Recommend another (movie)[v:chearmstrong.streamPicker.ContentType:movie] from (Netflix)[v:chearmstrong.streamPicker.ContentProvider:netflix]")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYhBlaDSkMqCVAZmBkYGJiDJAKRBEALgogA=)
+  last-modified (1575292523950)
+}

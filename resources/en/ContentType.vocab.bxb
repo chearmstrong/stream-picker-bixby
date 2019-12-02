@@ -1,0 +1,4 @@
+vocab (ContentType) {
+  "movie" { "movie", "film", "movies", "films" }
+  "show" { "show", "tv show", "shows", "tv show", "tv series" }
+}

@@ -3,3 +3,8 @@ train (t-h4v0xh1lhd7fwcsqonfi2v8yw) {
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIgYmBEYgZgCQjAwOMBgA=)
   last-modified (1574079960957)
 }
+train (t-hpvgz9grzjy8tnruwy2s5lsbp) {
+  utterance ("[g:chearmstrong.streamPicker.getPopular] suggest some (movies)[v:chearmstrong.streamPicker.ContentType:movie] to watch on (apple tv plus)[v:chearmstrong.streamPicker.ContentProvider:'apple tv plus']")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIQZWg0pDKglQGZgZGBiYgyQCkQRAC4KIA)
+  last-modified (1575290622171)
+}

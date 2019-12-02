@@ -1,3 +1,8 @@
-text (ContentType) {
+enum (ContentType) {
+  features {
+    transient
+  }
   description (The type of content)
+  symbol (show)
+  symbol (movie)
 }

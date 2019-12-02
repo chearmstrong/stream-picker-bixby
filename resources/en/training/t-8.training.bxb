@@ -1,3 +1,8 @@
+train (t-83i50rxh9xyotpb1uhrc79zvv) {
+  utterance ("[g:chearmstrong.streamPicker.recommend] recommend a (show)[v:ContentType:show] to watch on (netflix)[v:chearmstrong.streamPicker.ContentProvider:netflix]")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYhBlaDSkMqCVAZmBkYGJiDJAKRBEALgogA=)
+  last-modified (1575289683442)
+}
 train (t-83idmyg89bkg2v7yn2gfxdddh) {
   utterance ("[g:getPopular:continue] more from (apple tv plus)[v:ContentProvider:'apple tv plus']")
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIgYmBEYgZgCQjAwhA+QA=)

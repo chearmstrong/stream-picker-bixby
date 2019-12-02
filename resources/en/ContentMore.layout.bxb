@@ -21,7 +21,34 @@ layout-macro-def (content-more) {
             content {
               order (PrimarySecondary)
               primary{
-                template ("See what's popular...")
+                template ("More popular #{value(content.type)}s...")
+              }
+              secondary{
+                template ("#{upper(content.provider)}")
+              }
+            }
+          }
+          on-click {
+            intent {
+              goal: getPopular
+              value: $expr(content.provider)
+              value: $expr(content.type)
+            }
+          }
+        }
+        cell-card {
+          slot1 {
+            image {
+              url ("images/#{value(content.providerShort)}.jpg")
+              background-color (Transparent)
+							shape (Square)
+            }
+          }
+          slot2{
+            content {
+              order (PrimarySecondary)
+              primary{
+                template ("Popular movies and shows...")
               }
               secondary{
                 template ("#{upper(content.provider)}")

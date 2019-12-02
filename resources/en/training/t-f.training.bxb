@@ -1,0 +1,10 @@
+train (t-fkian82px3h44kb6oemgddup8) {
+  utterance ("[g:chearmstrong.streamPicker.recommend:continue:recommend] Recommend another (movie)[v:chearmstrong.streamPicker.ContentType:movie] from (Apple TV plus)[v:chearmstrong.streamPicker.ContentProvider:'apple tv plus']")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYhBlaDSkMqCVAZmBkYGJiDJAKRBEALgogA=)
+  last-modified (1575292543190)
+}
+train (t-fl3y6qii9ynw9ak3nko35ieew) {
+  utterance ("[g:recommend:continue] Recommend a (show)[v:ContentType:show] from another provider")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYhBlaDSkMqCVAZmBkYGJiDJAKRBEAKYgCygGAA=)
+  last-modified (1575292684331)
+}

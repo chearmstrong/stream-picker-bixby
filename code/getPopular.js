@@ -5,12 +5,12 @@ const { getManyMovieTrailerStreams } = require('./api/mc.js')
 const getYouTubeId = require('./lib/getYouTubeId.js')
 const getTmdbId = require('./lib/getTmdbId.js')
 
-module.exports.function = function getPopular(provider, $vivContext) {
+module.exports.function = function getPopular(provider, type, $vivContext) {
   try {
     provider = provider ? provider.toString() : provider // To deal with bug
     const { locale, bixbyUserId } = $vivContext
     
-    const content = getPopularTitlesByProvider(provider, locale)
+    const content = getPopularTitlesByProvider(provider, type || null, locale || 'en-US')
 
     if (!content) {
       return null

@@ -1,24 +1,24 @@
 hints {
   uncategorized {
     hint ("Ask Stream Picker what's popular on Netflix")
-    hint ("Ask Stream Picker what's popular on Apple TV Plus")
+    hint ("Ask Stream Picker what movies are popular on Apple TV Plus")
     hint ("Ask Stream Picker what's popular on Amazon Prime Video")
-    hint ("Ask Stream Picker what's popular on Now TV")
+    hint ("Ask Stream Picker what shows are popular on Now TV")
     hint ("Ask Stream Picker what's popular on Disney Life")
-    hint ("Ask Stream Picker what's popular on Starz on Amazon")
+    hint ("Ask Stream Picker what films are popular on Starz on Amazon")
 
     hint ("Ask Stream Picker to give me some suggestions from Netflix")
-    hint ("Ask Stream Picker to give me some suggestions from Apple TV Plus")
+    hint ("Ask Stream Picker to give me some movie from Apple TV Plus")
     hint ("Ask Stream Picker to give me some suggestions from Amazon Prime Video")
-    hint ("Ask Stream Picker to give me some suggestions from Amazon Now TV")
+    hint ("Ask Stream Picker to give me some shows from Now TV")
     hint ("Ask Stream Picker to give me some suggestions from Disney Life")
-    hint ("Ask Stream Picker to give me some suggestions from Starz on Amazon")
+    hint ("Ask Stream Picker to give me some films from Starz on Amazon")
 
     hint ("Ask Stream Picker to recommend something to watch on Netflix")
-    hint ("Ask Stream Picker to recommend something to watch on Apple TV Plus")
+    hint ("Ask Stream Picker to recommend a movie to watch on Apple TV Plus")
     hint ("Ask Stream Picker to recommend something to watch on Amazon Prime Video")
-    hint ("Ask Stream Picker to recommend something to watch on Now TV")
+    hint ("Ask Stream Picker to recommend a show to watch on Now TV")
     hint ("Ask Stream Picker to recommend something to watch on Disney Life")
-    hint ("Ask Stream Picker to recommend something to watch on Starz on Amazon")
+    hint ("Ask Stream Picker to recommend a film to watch on Starz on Amazon")
   }
 }

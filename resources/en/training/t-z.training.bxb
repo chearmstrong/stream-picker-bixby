@@ -1,5 +1,20 @@
+train (t-z1rqxgfbewadl965ubzf9mpwy) {
+  utterance ("[g:getPopular:continue] get more (shows)[v:ContentType:show] from (amazon prime video)[v:ContentProvider:'amazon prime video']")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIQZWg0pDKglQGZgZGBiYgyQCkQRAC4KIA)
+  last-modified (1575292419349)
+}
 train (t-zffufb08as2f4pyh9wnt56ywv) {
   utterance ("[g:recommend] suggest something on (netflix)[v:ContentProvider:netflix]")
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
   last-modified (1573508496775)
+}
+train (t-zg684ilqwk95hf29hgorygqyl) {
+  utterance ("[g:chearmstrong.streamPicker.getPopular] give me some (shows)[v:chearmstrong.streamPicker.ContentType:show] from (apple tv plus)[v:chearmstrong.streamPicker.ContentProvider:'apple tv plus']")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIQZWg0pDKglQGZgZGBiYgyQCkQRAC4KIA)
+  last-modified (1575294292006)
+}
+train (t-zxr1uepyjo9apobleltsqmhnz) {
+  utterance ("[g:chearmstrong.streamPicker.recommend:continue:recommend] Recommend a (movie)[v:chearmstrong.streamPicker.ContentType:movie] from another provider")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYhBlaDSkMqCVAZmBkYGJiDJAKRBEAKYgCygGAA=)
+  last-modified (1575292703152)
 }

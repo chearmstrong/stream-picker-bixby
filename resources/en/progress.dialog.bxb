@@ -1,0 +1,19 @@
+dialog (Progress) {
+  match: _ {
+    from-output: _ {
+      from-input: ContentType (type)
+      from-input: ContentProvider (provider)
+    }
+  }
+  if (exists(type)) {
+    choose (Random) {
+      template ("Fetching #{value(type)}s from #{upper(provider)}...")
+      template ("Getting popular #{value(type)} titles from #{upper(provider)}...")
+    }
+  } else {
+    choose (Random) {
+      template ("Fetching movies and shows from #{upper(provider)}...")
+      template ("Getting popular movies and shows from #{upper(provider)}...")
+    }
+  }
+}

@@ -8,3 +8,8 @@ train (t-n2fj35zr8c9c1muybowjlw4j0) {
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIgYmBEYgZgCQjAwhA+QA=)
   last-modified (1574080036587)
 }
+train (t-njzmp1a7z2d9chwaydp5bsptk) {
+  utterance ("[g:recommend:continue] Recommend another (show)[v:ContentType:show] from (Netflix)[v:ContentProvider:netflix]")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYhBlaDSkMqCVAZmBkYGJiDJAKRBEALgogA=)
+  last-modified (1575292592093)
+}

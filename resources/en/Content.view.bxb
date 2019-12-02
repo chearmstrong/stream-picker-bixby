@@ -1,5 +1,9 @@
 result-view {
-	match: Content (result)
+	match: Content (result) {
+		from-output: _ {
+			from-input: ContentType (type)
+		}
+	}
 	render {
 		if (size(result) == 1) {
 			layout {
@@ -28,19 +32,37 @@ result-view {
 		}
 	}
 	conversation-drivers {
-		if (size(result) > 1) {
-			conversation-driver {
-				template ("Get more results from #{upper(result[0].provider)}")
+		if (exists(type)) {
+			if (size(result) > 1) {
+				conversation-driver {
+					template ("Get more #{value(type)}s from #{upper(result[0].provider)}")
+				}
+				conversation-driver {
+					template ("Get #{value(type)}s for another provider")
+				}
+			} else-if (size(result) == 1) {
+				conversation-driver {
+					template ("Recommend another #{value(type)} from #{upper(result[0].provider)}")
+				}
+				conversation-driver {
+					template ("Recommend a #{value(type)} from another provider")
+				}
 			}
-			conversation-driver {
-				template ("Get results for another provider")
-			}
-		} else-if (size(result) == 1) {
-			conversation-driver {
-				template ("Recommend another from #{upper(result[0].provider)}")
-			}
-			conversation-driver {
-				template ("Recommend something from another provider")
+		} else {
+			if (size(result) > 1) {
+				conversation-driver {
+					template ("Get more results from #{upper(result[0].provider)}")
+				}
+				conversation-driver {
+					template ("Get results for another provider")
+				}
+			} else-if (size(result) == 1) {
+				conversation-driver {
+					template ("Recommend another from #{upper(result[0].provider)}")
+				}
+				conversation-driver {
+					template ("Recommend something from another provider")
+				}
 			}
 		}
 	}

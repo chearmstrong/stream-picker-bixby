@@ -13,3 +13,8 @@ train (t-wq5dgnutdrlx6lqx4lhn1jel0) {
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
   last-modified (1573558059499)
 }
+train (t-wu927cgnhyh4zkh7ocrjs4t6s) {
+  utterance ("[g:recommend] recommend a (movie)[v:ContentType:movie] to watch on (amazon prime video)[v:ContentProvider:'amazon prime video']")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYhBlaDSkMqCVAZmBkYGJiDJAKRBEALgogA=)
+  last-modified (1575289739638)
+}

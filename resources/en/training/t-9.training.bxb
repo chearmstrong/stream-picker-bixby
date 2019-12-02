@@ -3,3 +3,8 @@ train (t-9h2z2uv9xsmkys5h0y8268nmj) {
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
   last-modified (1574080228613)
 }
+train (t-9h7evrttekjk8sua3b19wva1n) {
+  utterance ("[g:getPopular:continue] get more (movies)[v:ContentType:movie] from (Apple TV plus)[v:ContentProvider:'apple tv plus']")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIQZWg0pDKglQGZgZGBiYgyQCkQRAC4KIA)
+  last-modified (1575292342521)
+}

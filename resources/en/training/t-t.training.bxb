@@ -1,3 +1,8 @@
+train (t-tbjoomg57ebin9w4f5jyangjx) {
+  utterance ("[g:chearmstrong.streamPicker.recommend:continue:recommend] Recommend another (show)[v:chearmstrong.streamPicker.ContentType:show] from (amazon prime video)[v:chearmstrong.streamPicker.ContentProvider:'amazon prime video']")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYhBlaDSkMqCVAZmBkYGJiDJAKRBEALgogA=)
+  last-modified (1575292645741)
+}
 train (t-tvrmapub1fueanxljlnlpg56k) {
   utterance ("[g:getPopular:continue] more from (amazon prime video)[v:ContentProvider:'amazon prime video']")
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIgYmBEYgZgCQjAwhA+QA=)
