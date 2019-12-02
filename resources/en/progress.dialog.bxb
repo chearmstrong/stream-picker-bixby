@@ -8,7 +8,7 @@ dialog (Progress) {
   if (exists(type)) {
     choose (Random) {
       template ("Fetching #{value(type)}s from #{upper(provider)}...")
-      template ("Getting popular #{value(type)} from #{upper(provider)}...")
+      template ("Getting popular #{value(type)}s from #{upper(provider)}...")
     }
   } else {
     choose (Random) {
