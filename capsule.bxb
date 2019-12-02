@@ -1,6 +1,6 @@
 capsule {
   id (chearmstrong.streamPicker)
-  version (1.5.2)
+  version (1.5.3)
   format (3)
   targets {
     target (bixby-mobile-en-US)
