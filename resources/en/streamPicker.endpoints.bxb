@@ -1,11 +1,11 @@
 endpoints {
   action-endpoints {
     action-endpoint (recommend) {
-      accepted-inputs (provider, $vivContext)
+      accepted-inputs (provider, type, $vivContext)
       local-endpoint (recommend.js)
     }
     action-endpoint (getPopular) {
-      accepted-inputs (provider, $vivContext)
+      accepted-inputs (provider, type, $vivContext)
       local-endpoint (getPopular.js)
     }
     action-endpoint (getProviders) {

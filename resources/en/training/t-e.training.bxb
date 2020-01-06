@@ -3,3 +3,8 @@ train (t-enbehm4ywc0ahwsjthhzxai3z) {
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
   last-modified (1573508787726)
 }
+train (t-essfypnq537pqccx7qo2ani5g) {
+  utterance ("[g:chearmstrong.streamPicker.getPopular] what (movies)[v:chearmstrong.streamPicker.ContentType:movie] are popular on (Apple TV Plus)[v:chearmstrong.streamPicker.ContentProvider:'apple tv plus']")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIQZWg0pDKglQGZgZGBiYgyQCkQRAC4KIA)
+  last-modified (1575294666570)
+}

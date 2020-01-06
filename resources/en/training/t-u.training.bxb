@@ -1,3 +1,8 @@
+train (t-u1mrj5drf2joon6gdwlf6f28i) {
+  utterance ("[g:recommend] suggest a (show)[v:ContentType:show] to watch on (now tv)[v:ContentProvider:'now tv']")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYhBlaDSkMqCVAZmBkYGJiDJAKRBEALgogA=)
+  last-modified (1575290327223)
+}
 train (t-uh482nh2q5m8expzadhwikkm3) {
   utterance ("[g:chearmstrong.streamPicker.recommend] recommend something on (amazon prime video)[v:chearmstrong.streamPicker.ContentProvider:'amazon prime video']")
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)

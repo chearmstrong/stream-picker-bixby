@@ -15,8 +15,8 @@ const pageSize = parseInt(cfg.get('justWatch.pageSize'))
  * @param {string} locale
  * @return {Object|null}
  */
-const getRandomTitleByProvider = (provider, locale) => {
-  const items = getPopularTitles(provider, locale)
+const getRandomTitleByProvider = (provider, type, locale) => {
+  const items = getPopularTitles(provider, type, locale)
 
   if (!items) {
     return null
@@ -36,8 +36,8 @@ const getRandomTitleByProvider = (provider, locale) => {
  * @param {string} locale
  * @return {Array|null}
  */
-const getPopularTitlesByProvider = (provider, locale) => {
-  const items = getPopularTitles(provider, locale)
+const getPopularTitlesByProvider = (provider, type, locale) => {
+  const items = getPopularTitles(provider, type, locale)
 
   if (!items) {
     return null
@@ -86,7 +86,7 @@ const getTitleDetailed = (id, type, locale) => {
  * @param {String} locale
  * @return {Array}
  */
-const getPopularTitles = (provider, locale) => {
+const getPopularTitles = (provider, type, locale) => {
   if (!provider || !locale) {
     return null
   }
@@ -97,6 +97,7 @@ const getPopularTitles = (provider, locale) => {
     format: 'json',
     query: {
       body: JSON.stringify({
+        content_types: type ? [type] : [],
         monetization_types: ['flatrate'], // flatrate === streaming service like netflix
         providers: [shortCode],
         'page_size': pageSize

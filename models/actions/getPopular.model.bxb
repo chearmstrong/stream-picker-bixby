@@ -22,11 +22,15 @@ action (getPopular) {
 				}
 			}
 		}
+		input (type) {
+			type (ContentType)
+			min (Optional) max (One)
+		}
 	}
 	output (Content) {
 		throws {
 			unknown-error {
-				on-catch {
+				on-catch {	
 					halt {
 						dialog {
 							template ("Oops! Something went wrong - please try again.")

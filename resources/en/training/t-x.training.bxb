@@ -3,3 +3,8 @@ train (t-xmw9vxesp2pa1h39htrjmu1gw) {
   plan (Y2BmUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDMq4lRSlJufn5qbmpTBoEjQnoCi/LDMltYiBiYERiBmAJCMDCED5AA==)
   last-modified (1573508438462)
 }
+train (t-xrvx5et9bjdx00ie5y1ejqbtc) {
+  utterance ("[g:getPopular] give me some (shows)[v:ContentType:show] from (now tv)[v:ContentProvider:'now tv']")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIQZWg0pDKglQGZgZGBiYgyQCkQRAC4KIA)
+  last-modified (1575294312713)
+}

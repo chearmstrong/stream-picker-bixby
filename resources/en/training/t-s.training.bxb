@@ -1,0 +1,10 @@
+train (t-s59rydyy2ggbuyhq669swoiit) {
+  utterance ("[g:chearmstrong.streamPicker.getPopular:continue:getPopular] get more (movies)[v:chearmstrong.streamPicker.ContentType:movie] from (amazon prime video)[v:chearmstrong.streamPicker.ContentProvider:'amazon prime video']")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIQZWg0pDKglQGZgZGBiYgyQCkQRAC4KIA)
+  last-modified (1575292309970)
+}
+train (t-sabp3iet0xizvk2lr7pssdc4b) {
+  utterance ("[g:chearmstrong.streamPicker.getPopular:continue:getPopular] get more (shows)[v:chearmstrong.streamPicker.ContentType:show] from (Apple TV plus)[v:chearmstrong.streamPicker.ContentProvider:'apple tv plus']")
+  plan (Y2BhUEzOSE0syi0uKcrPS9cDUqmJuQGZydmpRXrO+XklqXklDCq4laSnlgTkF5TmJBYxaBI0KKAovywzJbWIQZWg0pDKglQGZgZGBiYgyQCkQRAC4KIA)
+  last-modified (1575292444311)
+}
