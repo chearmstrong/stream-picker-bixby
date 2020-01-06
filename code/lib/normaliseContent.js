@@ -14,6 +14,10 @@ const getProviderDetails = provider => providers.find(item => item.name === prov
  * @return {Number}
  */
 const getRating = scores => {
+  if (!Array.isArray(scores) || !scores.length) {
+    return null
+  }
+
   const filtered = scores.filter(item => {
     return item.provider_type === 'imdb:score' || item.provider_type === 'tmdb:score'
   })
@@ -27,12 +31,11 @@ const getRating = scores => {
  * Gets the streaming link for the chosen provider.
  * 
  * @param {Object} content
- * @param {Array} content.offers
- * @param {String} provider
+ * @param {String} providerDetails
  * @return {String|null}
  */
 const getStreamingLink = (content, providerDetails) => {
-  if (!content.offers || !content.offers.length) {
+  if (!Array.isArray(content.offers) || !content.offers.length) {
     return null
   }
 
@@ -49,6 +52,12 @@ const getStreamingLink = (content, providerDetails) => {
   return filtered[0].urls.standard_web
 }
 
+/**
+ * Gets the poster for the content.
+ * 
+ * @param {Object} content
+ * @return {String|null}
+ */
 const getJustWatchPoster = content => {
   if (!content.poster) {
     return null
@@ -57,8 +66,14 @@ const getJustWatchPoster = content => {
   return imageBaseUrl + content.poster.replace("{profile}", posterProfile)
 }
 
+/**
+ * Gets the backdrop for the content.
+ * 
+ * @param {Object} content
+ * @return {String|null}
+ */
 const getJustWatchBackdrop = content => {
-  if (!content.backdrops || !content.backdrops.length) {
+  if (!Array.isArray(content.backdrops) || !content.backdrops.length) {
     return null
   }
 
@@ -78,8 +93,8 @@ const normaliseContent = (content, poster, provider, trailerStream, youTubeId) =
   const providerDetails = getProviderDetails(provider)
   const normalised = {
     title: content.title,
-    rating: getRating(content.scoring) || null,
-    stars: getRating(content.scoring) ? '⭐️'.repeat(getRating(content.scoring)) : null,
+    rating: getRating(content.scoring),
+    stars: getRating(content.scoring) && '⭐️'.repeat(getRating(content.scoring)),
     year: content.original_release_year,
     overview: content.short_description,
     type: content.object_type,
@@ -87,7 +102,7 @@ const normaliseContent = (content, poster, provider, trailerStream, youTubeId) =
     backdrop: getJustWatchBackdrop(content),
     poster: getJustWatchPoster(content),
     play: getStreamingLink(content, providerDetails),
-    providerShort: providerDetails.shortCode || null
+    providerShort: providerDetails.shortCode
   }
 
   // CONDITIONAL ITEMS
