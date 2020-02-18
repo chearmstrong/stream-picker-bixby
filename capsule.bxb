@@ -1,10 +1,12 @@
 capsule {
   id (chearmstrong.streamPicker)
-  version (1.5.3)
+  version (1.5.4)
   format (3)
   targets {
     target (bixby-mobile-en-US)
     target (bixby-mobile-en-GB)
+    target (bixby-tv-en-US)
+    target (bixby-tv-en-GB)
   }
   store-sections {
     section (MoviesAndTV)
@@ -16,21 +18,14 @@ capsule {
     }
   }
   capsule-imports {
-    import (viv.image) {
-      as (content_poster) version (2.12.10)
-    }
     import (viv.time) {
-      as (content_release) version (3.0.3)
+      as (content_release) version (3.1.23)
     }
   }
-  runtime-flags {
-    use-input-views-for-selection-list-detail
-    modern-default-view-behavior
-    no-filtering-with-validation
-    concepts-inherit-super-type-features
-    modern-prompt-rejection
-    support-halt-effect-in-computed-inputs
-    allow-dialogs-on-detail-pages
+  runtime-version (2) {
+    overrides {
+      allow-dialogs-on-detail-pages (true)
+    }
   }
   permissions {
     bixby-user-id-access

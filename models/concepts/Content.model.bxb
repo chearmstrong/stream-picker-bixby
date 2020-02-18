@@ -45,7 +45,7 @@ structure (Content) {
     min (Optional) max (One)
   }
   property (poster) {
-    type (content_poster.Url)
+    type (ContentPoster)
     min (Optional) max (One)
   }
   property (backdrop) {
