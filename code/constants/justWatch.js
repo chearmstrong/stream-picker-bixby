@@ -33,13 +33,7 @@ const providers = [
     name: 'disney plus',
     shortCode: 'dnp',
     id: 337,
-    locales: ['en-US']
-  },
-  {
-    name: 'disney life',
-    shortCode: 'dli',
-    id: 129,
-    locales: ['en-GB']
+    locales: ['en-US', 'en-GB']
   },
   {
     name: 'starz on amazon',

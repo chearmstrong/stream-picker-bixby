@@ -2,7 +2,7 @@ vocab (ContentProvider) {
   "netflix" { "netflix", "net flix", "net flicks" }
   "apple tv plus" { "apple tv plus", "apple", "apple tv", "apple tv+", "apple tv +" }
   "amazon prime video" { "amazon prime video", "amazon prime", "prime video", "amazon video", "amazon" }
-  "disney life" { "disney life", "disney" }
+  "disney plus" { "disney plus", "disney", "disney life" }
   "starz on amazon" { "starz on amazon", "starz on amazon prime", "starz on prime video", "starzplay on amazon", "starzplay on amazon prime", "starzplay on prime video", "starz play on amazon", "starz play on amazon prime", "starz play on prime video" }
   "now tv" { "now tv", "sky now tv", "now t v" }
 }

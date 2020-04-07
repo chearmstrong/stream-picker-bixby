@@ -98,7 +98,7 @@ const getPopularTitles = (provider, type, locale) => {
     query: {
       body: JSON.stringify({
         content_types: type ? [type] : [],
-        monetization_types: ['flatrate'], // flatrate === streaming service like netflix
+        monetization_types: ['flatrate'], // 'flatrate' === streaming service like netflix
         providers: [shortCode],
         'page_size': pageSize
       })

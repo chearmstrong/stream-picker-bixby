@@ -1,0 +1,11 @@
+action (getTrailerStream) {
+  type(Fetch)
+  description (Get the streaming content from YouTube)
+  collect {
+    input (content) {
+      type (Content)
+      min (Required) max (One)
+    }
+  }
+  output (ContentTrailerStream)
+}

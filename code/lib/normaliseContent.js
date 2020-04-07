@@ -107,9 +107,8 @@ const normaliseContent = (content, poster, provider, trailerStream, youTubeId) =
 
   // CONDITIONAL ITEMS
 
-  if (poster) {
-    normalised.poster = poster || getJustWatchPoster(content)
-  }
+  normalised.poster = poster || getJustWatchPoster(content)
+
 
   if (trailerStream) {
     normalised.trailerStream = trailerStream
