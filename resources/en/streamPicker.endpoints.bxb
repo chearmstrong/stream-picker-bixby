@@ -12,5 +12,9 @@ endpoints {
       accepted-inputs ($vivContext)
       local-endpoint (getProviders.js)
     }
+    action-endpoint (getTrailerStream) {
+      accepted-inputs (content, $vivContext)
+      local-endpoint (getTrailerStream.js)
+    }
   }
 }

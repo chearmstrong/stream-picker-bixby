@@ -35,6 +35,7 @@ structure (Content) {
   property (trailerStream) {
     type (ContentTrailerStream)
     min (Optional) max (One)
+    lazy-source (getTrailerStream)
   }
   property (rating) {
     type (ContentRating)
