@@ -1,7 +1,7 @@
 const { getMovieTrailerStream } = require('./api/mc.js')
 const errorNotify = require('./lib/errorNotify.js')
 
-module.exports.function = function getTrailerStream(content) {
+module.exports.function = function getTrailerStream(content, $vivContext) {
   try {
     const trailerStream = content.youTubeId ? getMovieTrailerStream(content.youTubeId) : null
 
